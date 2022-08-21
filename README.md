@@ -20,3 +20,13 @@ In a famous scientific problem, researchers are interested in the following ques
 </p>
 
 When n is sufficiently large, there is a threshold value p* such that when p < p* a random n-by-n grid almost never percolates, and when p > p*, a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. The code in this repository estimates p*.
+
+## Example
+if sites are opened in a 20-by-20 lattice according to the snapshots below, then our estimate of the percolation threshold is 204/400 = 0.51 because the system percolates when the 204th site is opened.
+From left to right, the number of open sites increases. (50, 100, 150, and 204)
+<p align="center">
+<img src=https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-50.png width="200" height="200"/>          
+<img src=https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-100.png width="200" height="200"/>    
+<img src=https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-150.png width="200" height="200"/>          
+<img src=https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-204.png width="200" height="200"/>
+</p>
