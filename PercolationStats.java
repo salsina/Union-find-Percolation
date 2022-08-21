@@ -18,11 +18,7 @@ public class PercolationStats {
 
         for (int i=0; i<trials; i++) {
             percolation = new Percolation(N);
-
             int res = test();
-            // System.out.println(res);
-            // System.out.println("temam");
-
             tests.add(res);
         }
     }
@@ -37,9 +33,6 @@ public class PercolationStats {
                 random_row = (int)Math.floor(Math.random()*(max-min+1)+min);
                 random_col = (int)Math.floor(Math.random()*(max-min+1)+min);
             }
-            // System.out.println(random_row);
-            // System.out.println(random_col);
-            // System.out.println("--------------------");
             percolation.open(random_row, random_col);
 
             if (percolation.percolates())
